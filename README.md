@@ -1,0 +1,2 @@
+# squid
+Simple Squid setup
