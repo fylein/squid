@@ -7,16 +7,20 @@ This was inspired by this [project](https://hub.docker.com/r/sameersbn/squid).
 # Build
 
 ```bash
-docker docker build --tag=squid .
+docker build -t squid .
 ```
 
 ## Running
 
+First time around, create a directory in the host where all the log files will go
+```bash
+mkdir ~/squid
+```
+
 Start Squid using this command. 
 
 ```bash
-mkdir ~/squid
-docker run --name=squid --rm -d -p 8981:3128 -v ~/squid/:/var/cache/squid/ fylehq/squid
+docker run --name=squid --rm -d -p 8981:3128 -v ~/squid/:/var/cache/squid/ squid
 ```
 
 You should start seeing access logs in ~/squid directory.
