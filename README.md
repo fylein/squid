@@ -2,7 +2,7 @@
 
 This repo builds a docker image to run a squid proxy. The configurations are very lax - so please do not use it for any security-sensitive deployments. This is meant for development use only.
 
-This was inspired by this (project)[https://hub.docker.com/r/sameersbn/squid].
+This was inspired by this [project](https://hub.docker.com/r/sameersbn/squid).
 
 # Build
 
